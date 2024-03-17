@@ -1,0 +1,398 @@
+:root{
+    --primary-color: #0B0D17;
+    --blue: #D0D6F9;
+    --white: #FFFFFF;
+}
+#heading1{
+    font-family: 'Bellefair Regular';
+    font-size: 150px;
+}
+#heading2{
+    font-family: 'Bellefair Regular';
+    font-size: 100px;
+}
+#heading3{
+    font-family: 'Bellefair Regular';
+    font-size: 56px;
+}
+#heading4{
+    font-family: 'Bellefair Regular';
+    font-size: 32px;
+}
+#heading5{
+    font-family: 'Barlow Condensed Regular';
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+#para{
+    font-family: 'Barlow Condensed Regular';
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--blue);
+}
+#sb1{
+    font-family: 'Bellefair Regular';
+    font-size: 28px;
+}
+#sb2{
+    font-family: 'Barlow Condensed Regular';
+    font-size: 14px;
+    letter-spacing: 2.35px;
+}
+#navtxt{
+    font-family: 'Barlow Condensed Regular';
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+nav img{
+    height: 48px;
+    width: 48px;
+    margin-left: 30px;
+}
+#line{
+    width: 40rem;
+    height: 1px;
+    background-color: var(--blue);
+    text-align: center;
+    opacity: calc(0.2);
+    margin-left: 50px;
+}
+.mobile{
+    display: none;
+}
+navbar{
+    display: flex;
+    flex-direction: row;
+}
+navbar ul{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(3rem);
+    padding-right: 200px;
+    padding-left: 50px;
+}
+navbar ul li{
+    margin-left: 20px;
+    list-style-type: none;
+}
+navbar ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+navbar ul li a:hover{
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--blue);   
+}
+.list ul li a.active {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid red;
+  }
+navbar ul li a span{
+    font-weight: 900;
+    margin-right: 8px;
+}
+.menu-toggle{
+    display: none;
+}
+.main{
+    color: #fff;  
+    width: 90%;
+    margin: auto;
+    height: 38rem;
+}
+.main h1:nth-child(1){
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.main h1 span{
+    color: var(--blue);
+    position: relative;
+    top: 5px;
+    left: 0;
+    margin-right: 10px;
+    margin-left: 1rem;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+.content img{
+    width: 445px;
+    height: 445px;
+}
+.des{
+    width: 35%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.des ul{
+    display: flex;
+    align-items: center;
+}
+.des ul li{
+    margin-right: 20px;
+    list-style-type: none;
+}
+.des ul li:hover,.active{
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+.des ul li:hover{
+    border-bottom: 2px solid var(--blue);
+}
+.des ul li a{
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.des h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+.des p{
+    color: var(--blue);
+    font-size: 18px;
+    line-height: 2rem;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d0d6f93d;
+    font-family: 'Barlow Condensed',sans-serif;
+}
+.time{
+    color: var(--white);
+    display: flex;
+    justify-content: start;
+    text-transform: uppercase;
+}
+.time p{
+    font-size: 28px;
+    color: var(--blue);
+    margin-right: 3rem;
+    border: none;
+}
+.time span{
+    color: var(--white);
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+@media screen and (min-height: 768px) and (max-width: 1024px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
+    }
+    navbar ul{
+        padding-right: 5rem;
+    }
+    .main{
+        justify-content: space-around;
+        flex-direction: column;
+        height: 80vh;
+        top: 4rem;
+    }
+    .main h1{
+        font-size: 20px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    .content img{
+        height: 300px;
+        width:300px;
+    }
+    .des{
+        width: 80vw;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    .des ul{
+        align-content: center;
+    }
+} 
+
+@media screen and (min-width: 375px) and (max-width: 768px){
+    #heading1{
+        font-family: 'Bellefair Regular';
+        font-size: 80px;
+    }
+    #heading2{
+        font-family: 'Bellefair Regular';
+        font-size: 56px;
+    }
+    #heading3{
+        font-family: 'Bellefair Regular';
+        font-size: 56px;
+    }
+    #heading4{
+        font-family: 'Bellefair Regular';
+        font-size: 32px;
+    }
+    #heading5{
+        font-family: 'Barlow Condensed Regular';
+        font-size: 15px;
+        letter-spacing: 2.7px;
+    }
+    #para{
+        font-family: 'Barlow Condensed Regular';
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: var(--blue);
+        line-height: 25px;
+    }
+    #sb1{
+        font-family: 'Bellefair Regular';
+        font-size: 28px;
+    }
+    #sb2{
+        font-family: 'Barlow Condensed Regular';
+        font-size: 14px;
+        letter-spacing: 2.35px;
+    }
+    #navtxt{
+        font-family: 'Barlow Condensed Regular';
+        font-size: 14px;
+        letter-spacing: -1.8px;
+        height: 20px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        font-family: 'Bellefair','Barlow Condensed';  
+    }
+    body{
+        height: 100vh;
+        background-image: url(/starter-code/assets/destination/background-destination-mobile.jpg);
+    }
+    nav {
+        width: 100%;
+        padding: 0.02rem 0.04rem;
+        height: 1rem;
+        z-index: 100;
+    }
+    nav img{
+        height: 40px;
+        width: 40px;
+    }
+    nav #line{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        color: var(--primary-color);
+        zoom: 70%;
+        position: absolute;
+        right: 4rem;
+        z-index: 10;
+    }
+    .mobile img {
+        display: none; 
+    }
+
+    .mobile img[src="/starter-code/assets/shared/icon-hamburger.svg"] {
+        display: block; 
+    }
+
+    .mobile img[src="/starter-code/assets/shared/icon-close.svg"] {
+        display: none;
+    }
+    navbar{
+        display: none;
+        top: 3rem;
+        right: 1rem;
+    }
+    navbar ul{
+        height: 100vh;
+        width: 60vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-evenly;
+        backdrop-filter: blur(4rem);
+    }
+    .main{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0rem;
+        padding: 10px;
+    }
+    .main h1:nth-child(1) {
+        text-align: center;
+    }
+    .content{
+        width: 90%;
+        margin: auto;
+        line-height: 0rem;
+        text-align: center;
+        flex-direction: column;
+    }
+    .content img {
+        width: 170px;
+        height: 170px;
+        padding: 10px;
+    }
+    .content p{
+        font-size: 15px;
+    }
+    .content h1{
+        font-size: 56px;
+        margin: 30px 20px;
+    }
+    .des{
+        width: 100%;
+        gap: 50px;    
+    }
+    .des p{
+        padding-bottom: 20px;
+    }
+    .btn{
+        height: 150px;
+        width: 150px;
+        font-size: 16px;
+    }
+    .time{
+       align-items: center;
+        flex-direction: column;
+    }
+    .time p{
+        margin: 0;
+    }
+    .time span{
+        justify-self: center;
+    }
+    
+}

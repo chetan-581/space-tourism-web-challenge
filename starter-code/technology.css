@@ -1,0 +1,445 @@
+:root{
+    --primary-color: #0B0D17;
+    --blue: #D0D6F9;
+    --white : #FFFFFF;
+}
+#heading1{
+    font-family: 'Bellefair Regular',sans-serif;
+    font-size: 150px;
+}
+#heading2{
+    font-family: 'Bellefair Regular',sans-serif;
+    font-size: 100px;
+}
+#heading3{
+    font-family: 'Bellefair Regular';
+    font-size: 56px;
+}
+#heading4{
+    font-family: 'Bellefair Regular',sans-serif;
+    font-size: 32px;
+}
+#heading5{
+    font-family: 'Bellefair Regular',sans-serif;
+    font-size: 28px;
+}
+#para{
+    font-family: 'Barlow Condensed';
+    font-size: 18px;
+    line-height: 2rem;
+    word-spacing: 1;
+    color: var(--blue);
+}
+#sb1{
+    font-family: 'Bellefair Regular';
+    font-size: 28px;
+}
+#sb2{
+    font-family: 'Barlow Condensed Regular';
+    font-size: 14px;
+    letter-spacing: 2.35px;
+}
+#navtxt{
+    font-family: 'Barlow Condensed Regular';
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bellefair',sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(/starter-code/assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+nav img{
+    height: 48px;
+    width: 48px;
+    margin-left: 30px;
+}
+#line{
+    width: 40rem;
+    height: 1px;
+    background-color: var(--blue);
+    text-align: center;
+    opacity: calc(0.2);
+    margin-left: 50px;
+}
+.mobile{
+    display: none;
+}
+navbar{
+    display: flex;
+    flex-direction: row;
+}
+navbar ul{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(3rem);
+    padding-right: 200px;
+    padding-left: 50px;
+}
+navbar ul li{
+    margin-left: 20px;
+    list-style-type: none;
+}
+navbar ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+navbar ul li a:hover{
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--blue);   
+}
+.list ul li a.active {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid red;
+  }
+navbar ul li a span{
+    font-weight: 900;
+    margin-right: 8px;
+}
+.menu-toggle{
+    display: none;
+}
+.main{
+    color: #fff;  
+    width: 100%;
+    margin: auto;
+    height: 38rem;
+    overflow: hidden;
+}
+#heading5{
+    color: var(--blue);
+}
+.tcont{
+    margin-left: 4rem;
+}
+.tcont #heading5{
+    color: var(--white);
+    text-transform: uppercase;
+}
+.tcont span{
+    color: var(--blue);
+    position: relative;
+    top: 5px;
+    left: 0;
+    margin-right: 10px;
+    margin-left: 1rem;
+}
+.content{
+    height: 90%;
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 4rem;
+}
+.content .c-1{
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.content .c-2{
+    width: 30%;
+    margin-right: 0;
+    
+}
+.c-2 img{  
+    height: 30rem;
+    object-position: center;
+    object-fit: contain;
+}
+.des{
+    width: 42%;
+    gap: 26px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.des ul li a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.des h6{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.des h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.des p:nth-child(1){
+    text-transform: uppercase;
+}
+.main .allbtns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.allbtns{
+   margin: 20px;
+}
+.allbtns .btn{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    outline: 1px solid var(--blue);
+    transition: 1s ease-in-out;
+    background: var(--primary-color);
+    font-family: 'Bellefair',sans-serif;
+}
+.btn a{
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allbtns .btn:hover{
+    outline: 2px solid white; 
+}
+.btn a.active{
+  color: black;
+  background-color: #fff;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #heading3{
+        font-size: 40px;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
+    }
+    navbar ul{
+        padding-right: 5rem;
+    }
+    .main{
+        justify-content: space-around;
+        flex-direction: column;
+        height: 80vh;
+        top: 4rem;
+    }
+    .main h1{
+        font-size: 20px;
+    }
+    .content{
+        height: 100%;
+        margin-top: 2rem;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .content .c-1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content .c-1 .allbtns{
+        flex-direction: row;
+    }
+    .des{
+        width: 80%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content .c-2{
+        width: 100vw;
+        height: 35vh;
+        overflow: hidden;
+    }
+    .c-2 img{
+        width: 100vw;
+        object-fit: inherit;
+    }
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 768px){
+    #heading1{
+        font-family: 'Bellefair Regular';
+        font-size: 80px;
+    }
+    #heading2{
+        font-family: 'Bellefair Regular';
+        font-size: 100px;
+    }
+    #heading3{
+        font-family: 'Bellefair Regular';
+        font-size: 24px;
+    }
+    #heading4{
+        font-family: 'Bellefair Regular';
+        font-size: 32px;
+    }
+    #heading5{
+        font-family: 'Barlow Condensed Regular';
+        font-size: 15px;
+        letter-spacing: 2.7px;
+    }
+    #para {
+        font-family: 'Barlow Condensed Regular';
+        font-size: 15px;
+        color: var(--blue);
+        line-height: 24px;
+    }
+    #sb1{
+        font-family: 'Bellefair Regular';
+        font-size: 28px;
+    }
+    #sb2{
+        font-family: 'Barlow Condensed Regular';
+        font-size: 14px;
+        letter-spacing: 2.35px;
+    }
+    #navtxt{
+        font-family: 'Barlow Condensed Regular';
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        font-family: 'Bellefair','Barlow Condensed';  
+    }
+    body{
+        height: 100vh;
+        background-image: url(/starter-code/assets/technology/background-technology-mobile.jpg);
+    }
+    nav {
+        width: 100%;
+        padding: 0.02rem 0.04rem;
+        height: 1rem;
+        z-index: 100;
+    }
+    nav img{
+        height: 40px;
+        width: 40px;
+    }
+    nav #line{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        color: var(--primary-color);
+        zoom: 70%;
+        position: absolute;
+        right: 4rem;
+        z-index: 10;
+    }
+    .mobile img {
+        display: none; 
+    }
+
+    .mobile img[src="/starter-code/assets/shared/icon-hamburger.svg"] {
+        display: block; 
+    }
+
+    .mobile img[src="/starter-code/assets/shared/icon-close.svg"] {
+        display: none;
+    }
+    navbar{
+        display: none;
+        top: 3rem;
+        right: 1rem;
+    }
+    navbar ul{
+        height: 100vh;
+        width: 60vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-evenly;
+        backdrop-filter: blur(4rem);
+    }
+    .main{
+        height: 80vh;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+    .content{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .content .c-1 {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: normal;
+        margin: auto;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .c-1 .allbtns{
+        flex-direction: row;
+    }
+    .des{
+        width: 100%;
+        gap: 10px;
+        padding: 0px 20px;
+    }
+    .allbtns .btn {
+        height: 40px;
+        width: 40px;
+    }
+    .btn a{
+        font-size: 20px;
+    }     
+    .content .c-2 {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 15px 0px;
+        height: 40vh;
+        overflow: hidden;
+    }
+    .btn{
+        height: 150px;
+        width: 150px;
+        font-size: 16px;
+    }
+    
+    
+    
+    
+}
+
