@@ -5,44 +5,44 @@
 }
 #heading1{
     font-family: 'Bellefair Regular';
-    font-size: 150px;
+    font-size: 9.37rem;
 }
 #heading2{
     font-family: 'Bellefair Regular';
-    font-size: 100px;
+    font-size: 6.25rem;
 }
 #heading3{
     font-family: 'Bellefair Regular';
-    font-size: 56px;
+    font-size: 3.5rem;
 }
 #heading4{
     font-family: 'Bellefair Regular';
-    font-size: 32px;
+    font-size: 2rem;
 }
 #heading5{
     font-family: 'Barlow Condensed Regular';
-    font-size: 25px;
+    font-size: 1.56rem;
     letter-spacing: 4px;
 }
 #para{
     font-family: 'Barlow Condensed Regular';
-    font-size: 18px;
+    font-size: 1.12rem;
     letter-spacing: 1px;
     color: var(--blue);
     line-height: 32px;
 }
 #sb1{
     font-family: 'Bellefair Regular';
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 #sb2{
     font-family: 'Barlow Condensed Regular';
-    font-size: 14px;
+    font-size: 0.87rem;
     letter-spacing: 2.35px;
 }
 #navtxt{
     font-family: 'Barlow Condensed Regular';
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 2.7px;
 }
 *{
@@ -53,10 +53,10 @@
     
 }
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+    background-image: url(/starter-code/assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -105,12 +105,12 @@ navbar ul li a{
     text-transform: uppercase;
 }
 navbar ul li a:hover{
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.3rem;
     border-bottom: 2px solid var(--blue);   
 }
-.list ul li a.active {
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid red;
+.active {
+    padding-bottom: 1.3rem;
+    border-bottom: 2px solid var(--blue);  
   }
 navbar ul li a span{
     font-weight: 900;
@@ -120,8 +120,8 @@ navbar ul li a span{
     display: none;
 }
 .main{
+    height: 83vh;
     color: #fff; 
-    height: 80vh;
     width: 100%;
     flex-direction: column;
     margin-top: 0rem;
@@ -208,7 +208,7 @@ navbar ul li a span{
 @media screen and (min-width: 768px) and (max-width: 991px){
     body{
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
     }
     navbar ul{
@@ -217,7 +217,8 @@ navbar ul li a span{
     .main{
         justify-content: space-around;
         flex-direction: column;
-        top: 4rem;
+        padding: 0 5rem;
+        height: fit-content;
     }
     .content{
         display: flex;
