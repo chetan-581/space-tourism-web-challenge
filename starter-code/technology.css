@@ -227,6 +227,8 @@ navbar ul li a span{
 }
 .btn a.active{
   color: black;
+  height: 80px;
+  width: 80px;
   background-color: #fff;
   border-radius: 50%;
 }
