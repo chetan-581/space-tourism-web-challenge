@@ -49,14 +49,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bellefair','Barlow Condensed';
-    
+    user-select: none;
+    font-family: 'Bellefair','Barlow Condensed';  
 }
 body{
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-image: url(/starter-code/assets/crew/background-crew-desktop.jpg);
+    background-image: url(./assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -209,7 +209,7 @@ navbar ul li a span{
     body{
         width: 100vw;
         height: 100%;
-        background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
     }
     navbar ul{
         padding-right: 5rem;
@@ -305,7 +305,7 @@ navbar ul li a span{
     }
     body{
         height: 100vh;
-        background-image: url(/starter-code/assets/crew/background-crew-mobile.jpg);
+        background-image: url(./assets/crew/background-crew-mobile.jpg);
     }
     nav {
         width: 100%;
@@ -333,11 +333,11 @@ navbar ul li a span{
         display: none; 
     }
 
-    .mobile img[src="/starter-code/assets/shared/icon-hamburger.svg"] {
+    .mobile img[src="./assets/shared/icon-hamburger.svg"] {
         display: block; 
     }
 
-    .mobile img[src="/starter-code/assets/shared/icon-close.svg"] {
+    .mobile img[src="./assets/shared/icon-close.svg"] {
         display: none;
     }
     navbar{
